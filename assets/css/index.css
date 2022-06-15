@@ -1,0 +1,490 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+body {
+    background: #000000;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 92px;
+    letter-spacing: 12.6621px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.crypto {
+    position: relative;
+    display: block;
+    background: #5DFEFE;
+    width: fit-content;
+    padding: 2px 13px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+
+    letter-spacing: 4.92414px;
+    text-transform: uppercase;
+    z-index: 1;
+    color: #000000;
+}
+
+.crypto::after {
+    content: '';
+    position: absolute;
+    left: 17px;
+    right: -17px;
+    bottom: 0;
+    top: 0;
+    background: #5DFEFE;
+    z-index: -1;
+    transform: skewX(40deg);
+}
+
+.currency .col{
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 3.07692px;
+    color: #000000;
+    padding: 0;
+    background: linear-gradient(180deg, #69A3A3 -32.87%, #5DFEFE 46.89%, #69A3A3 115.17%);
+    border: 1px solid #65C6C6;
+    padding: 17px;
+    margin-right: 12px;
+}
+
+/* .currency>span {
+    
+} */
+
+.currency>.col:nth-child(1),
+.currency>.col:nth-child(4),
+.currency>.col:nth-child(8) {
+    background: unset;
+    /* padding: 0; */
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+}
+
+.featured-links {
+    padding-bottom: 32px;
+}
+
+.featured-links .card {
+    border: 1px solid #F7F930;
+    background: #000;
+    /* border-radius: inherit; */
+    border-radius: unset;
+    /* border-top-right-radius: 20px; */
+    /* border-bottom-left-radius: 20px; */
+}
+
+
+
+.featured-links .card img {
+    border-bottom: 1px solid #F7F930;
+}
+
+.featured-links .card-title {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #F7F930;
+    position: relative;
+}
+
+.featured-links .card-title::before {
+    content: '';
+    position: absolute;
+    background: #f7f930;
+    width: 19px;
+    height: 10px;
+    left: 15px;
+    top: 3px;
+    transform: skewX(-30deg);
+    /* transform: translate(0, -50%); */
+}
+
+.featured-links .card-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+
+    padding-bottom: 19px;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+}
+
+.ocasino {
+    background-image: url("/assets/images/online\ casino.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.online-casino.p-sm-5>p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 150% */
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    /* margin-top: 75px; */
+}
+
+.intro-intro {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 114px;
+    flex-direction: row;
+}
+
+.intro {
+    /* display: f; */
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.intro>.row>p {
+    margin: 0;
+}
+
+.intro>.row {
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content:; */
+    /* justify-content: center; */
+}
+
+.intro-hr {
+    width: 143px;
+    border: thin solid;
+    height: 0;
+    /* margin-right: 1rem; */
+}
+
+.jackpot {
+    padding-bottom: 103px;
+}
+
+.jackpot h3 {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+    letter-spacing: 4.92414px;
+    text-transform: uppercase;
+    color: #000000;
+    background: #5DFEFE;
+    padding-left: 16px;
+    /* display: inline; */
+}
+
+.jackpot .top-winners {
+    border-radius: unset;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    /* or 115% */
+
+
+    color: #FFFFFF;
+}
+
+body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-child(10) {
+    border-color: transparent;
+}
+
+.top-winners .list-group-item {
+    background: transparent;
+}
+
+.jackpot tr td:nth-child(2) {
+    text-align: end;
+}
+
+.top-winners tr {
+    border-color: #6FFFBD;
+}
+
+.tw-heading {
+    background: url("/assets/images/Path\ 8.svg") left/cover no-repeat !important;
+}
+
+
+
+.top-winners td {
+    padding: 14px 0;
+    padding-left: 16px;
+}
+
+.casino-benefits {
+    /* padding: 100px; */
+    background-image: url("/assets/images/Casino\ BG.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* padding-bottom: 179px; */
+    /* background: aliceblue; */
+}
+
+.casino-benefits>div:first-child {
+    background: #5dfefe;
+}
+
+.casino-benefits .intro-hr {
+    color: #000;
+}
+
+.casino-benefits .card {
+    background: unset;
+    border: unset;
+    /* display: inline; */
+    padding: 0;
+}
+
+.casino-benefits .card-title {
+    font-family: 'Rajdhani';
+    position: relative;
+    display: inline-block;
+    /* width: 0%; */
+    z-index: 1;
+    padding-left: 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+    background: #000;
+    letter-spacing: 1.92414px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+.casino-benefits .card-body {
+    padding: 0;
+}
+
+.casino-benefits .card-text {
+    position: relative;
+    background: #fff;
+    padding: 22px 28px 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+
+    color: #000000;
+}
+
+.casino-benefits .card-body::before {
+    content: '';
+    /* z-index: -1; */
+    transform: skew(30deg);
+    position: absolute;
+    left: 50px;
+    background: #000;
+    right: 10px;
+    height: 36px;
+    /* bottom: 0; */
+    /* top: 0; */
+}
+
+.casino-benefits h2,
+.casino-benefits p {
+    color: #000;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.combined-shape {
+    position: absolute;
+    top: -35px;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+.combined-shape-bottom {
+    padding: 0;
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    right: 0;
+}
+
+.win-big {
+    align-items: center;
+    position: relative;
+    background-color: #F7F930;
+    padding: 24px 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 92px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+
+body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.jackpot {
+    background-image: url("/assets/images/featured\ links\ bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.begining {
+    background-image: url("/assets/images/Brick_darker2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 45px;
+}
+
+
+.view-more {
+    justify-content: center;
+    margin-bottom: 65px;
+}
+
+
+.view-more>button {
+
+    background: url("/assets/images/btn\ bg.svg") no-repeat center;
+    height: 80px;
+    border: unset;
+
+
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+
+    width: 204px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.view-more>button:hover {
+    background: url("/assets/images/btn\ bg.svg") no-repeat center;
+}
+
+.footer h3 {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer a,
+.footer p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.link-dark i {
+    font-size: 22px;
+    color: #5DFEFE;
+    border: 3px solid #5DFEFE;
+    border-radius: 50%;
+    padding: 7px 9px;
+}
+
+.jack-heading {
+    display: flex;
+    /* width: 100%; */
+    flex-wrap: nowrap;
+}
+
+.jack-heading h3 {
+    flex: 1;
+}
+
+.jack-heading button {
+    background: url("/assets/images/vbtn\ bgsvg.svg") center/cover no-repeat;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: unset;
+    border-radius: unset;
+    padding: 1px 40px;
+    border-bottom: 1px solid #fe5dfd;
+}
