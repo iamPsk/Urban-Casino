@@ -15,78 +15,59 @@ html {
 body {
     background: #000000;
     color: #fff;
+    font-family: 'Rajdhani';
 }
 
+/* main{
+    background: #000;
+} */
 h2 {
-    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
-    line-height: 92px;
-    letter-spacing: 12.6621px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .crypto {
-    position: relative;
     display: block;
-    background: #5DFEFE;
+    background: url("/assets/images/fprcrypobgsvg.svg") no-repeat right/cover;
     width: fit-content;
-    padding: 2px 13px;
-    font-family: 'Rajdhani';
+    padding: 2px 0;
+    padding-left: 13px;
+    padding-right: 28px;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 36px;
-    /* identical to box height */
 
-    letter-spacing: 4.92414px;
     text-transform: uppercase;
     z-index: 1;
     color: #000000;
 }
 
-.crypto::after {
-    content: '';
-    position: absolute;
-    left: 17px;
-    right: -17px;
-    bottom: 0;
-    top: 0;
-    background: #5DFEFE;
-    z-index: -1;
-    transform: skewX(40deg);
-}
 
-.currency .col{
-    font-family: 'Rajdhani';
+.currency {
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    
     text-align: center;
     letter-spacing: 3.07692px;
     color: #000000;
-    padding: 0;
-    background: linear-gradient(180deg, #69A3A3 -32.87%, #5DFEFE 46.89%, #69A3A3 115.17%);
-    border: 1px solid #65C6C6;
-    padding: 17px;
-    margin-right: 12px;
+    
 }
 
-/* .currency>span {
-    
-} */
 
-.currency>.col:nth-child(1),
-.currency>.col:nth-child(4),
-.currency>.col:nth-child(8) {
+.currency li {
+    background: linear-gradient(180deg, #69A3A3 -32.87%, #5DFEFE 46.89%, #69A3A3 115.17%);
+    border: 1px solid #65C6C6;
+    padding: 1rem;
+}
+
+.currency li:nth-child(1),
+.currency li:nth-child(4),
+.currency li:nth-child(8) {
     background: unset;
-    /* padding: 0; */
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     border: none;
 }
 
@@ -97,10 +78,7 @@ h2 {
 .featured-links .card {
     border: 1px solid #F7F930;
     background: #000;
-    /* border-radius: inherit; */
     border-radius: unset;
-    /* border-top-right-radius: 20px; */
-    /* border-bottom-left-radius: 20px; */
 }
 
 
@@ -110,7 +88,6 @@ h2 {
 }
 
 .featured-links .card-title {
-    font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 600;
     font-size: 23px;
@@ -129,7 +106,6 @@ h2 {
     left: 15px;
     top: 3px;
     transform: skewX(-30deg);
-    /* transform: translate(0, -50%); */
 }
 
 .featured-links .card-text {
@@ -138,8 +114,6 @@ h2 {
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-    /* or 133% */
-
     padding-bottom: 19px;
     letter-spacing: 0.5px;
 
@@ -153,28 +127,39 @@ h2 {
     background-repeat: no-repeat;
 }
 
-.online-casino.p-sm-5>p {
-    font-family: 'Roboto';
+.online-casino p {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    /* or 150% */
     color: #FFFFFF;
     margin-bottom: 50px;
-    /* margin-top: 75px; */
 }
 
 .intro-intro {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    margin-left: 114px;
+    /* margin-left: 114px; */
     flex-direction: row;
 }
 
+
+.intro-intro p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
 .intro {
-    /* display: f; */
     font-family: "Roboto";
     font-size: 14px;
     line-height: 24px;
@@ -190,34 +175,33 @@ h2 {
 .intro>.row {
     flex-wrap: nowrap;
     align-items: center;
-    /* justify-content:; */
-    /* justify-content: center; */
 }
 
 .intro-hr {
-    width: 143px;
+    width: 14px;
     border: thin solid;
     height: 0;
-    /* margin-right: 1rem; */
 }
 
 .jackpot {
     padding-bottom: 103px;
 }
 
+.jackpot .card {
+    background: transparent;
+    border: none;
+}
+
 .jackpot h3 {
-    font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    /* identical to box height */
     letter-spacing: 4.92414px;
     text-transform: uppercase;
     color: #000000;
     background: #5DFEFE;
     padding-left: 16px;
-    /* display: inline; */
 }
 
 .jackpot .top-winners {
@@ -227,10 +211,11 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    /* or 115% */
-
-
     color: #FFFFFF;
+}
+
+.jackpot .card-img-top{
+    /* max-height: 258px; */
 }
 
 body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-child(10) {
@@ -250,7 +235,7 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .tw-heading {
-    background: url("/assets/images/Path\ 8.svg") left/cover no-repeat !important;
+    background: url("/assets/images/Path\ 8.svg") right/cover no-repeat !important;
 }
 
 
@@ -261,18 +246,15 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .casino-benefits {
-    /* padding: 100px; */
     background-image: url("/assets/images/Casino\ BG.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    /* padding-bottom: 179px; */
-    /* background: aliceblue; */
+    background-position: bottom center;
 }
 
-.casino-benefits>div:first-child {
+/* .casino-benefits>div:first-child {
     background: #5dfefe;
-}
+} */
 
 .casino-benefits .intro-hr {
     color: #000;
@@ -281,23 +263,19 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 .casino-benefits .card {
     background: unset;
     border: unset;
-    /* display: inline; */
     padding: 0;
 }
 
 .casino-benefits .card-title {
-    font-family: 'Rajdhani';
+    background: url("/assets/images/carth3title.svg") no-repeat right/cover;
     position: relative;
-    display: inline-block;
-    /* width: 0%; */
-    z-index: 1;
+    /* display: inline-block; */
+    /* z-index: 1; */
     padding-left: 16px;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
-    /* identical to box height */
-    background: #000;
     letter-spacing: 1.92414px;
     text-transform: uppercase;
 
@@ -310,7 +288,7 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .casino-benefits .card-text {
-    position: relative;
+    /* position: relative; */
     background: #fff;
     padding: 22px 28px 36px;
     font-family: 'Roboto';
@@ -318,23 +296,17 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    /* or 150% */
-
-
     color: #000000;
 }
 
 .casino-benefits .card-body::before {
-    content: '';
-    /* z-index: -1; */
+    /* content: '';
     transform: skew(30deg);
     position: absolute;
     left: 50px;
     background: #000;
     right: 10px;
-    height: 36px;
-    /* bottom: 0; */
-    /* top: 0; */
+    height: 36px; */
 }
 
 .casino-benefits h2,
@@ -371,6 +343,11 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .win-big {
+    /* background: url("/assets/images/winBG.png"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+
     align-items: center;
     position: relative;
     background-color: #F7F930;
@@ -378,17 +355,18 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 7px;
     line-height: 92px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    
-    color: #000000;
+
 }
 
-body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
+.win-big p {
     text-transform: uppercase;
     margin-bottom: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 12.6621px;
 }
 
 
@@ -419,14 +397,10 @@ body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
     background: url("/assets/images/btn\ bg.svg") no-repeat center;
     height: 80px;
     border: unset;
-
-
-    font-family: 'Rajdhani';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    /* identical to box height */
 
     width: 204px;
     text-align: center;
@@ -465,7 +439,6 @@ body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
 
 .jack-heading {
     display: flex;
-    /* width: 100%; */
     flex-wrap: nowrap;
 }
 
@@ -473,9 +446,10 @@ body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
     flex: 1;
 }
 
+
 .jack-heading button {
-    background: url("/assets/images/vbtn\ bgsvg.svg") center/cover no-repeat;
-    font-family: 'Rajdhani';
+    background: url("/assets/images/vbtn\ bgsvg.svg") right/cover no-repeat;
+
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -486,5 +460,161 @@ body>div:nth-child(3)>div.row.win-big.px-5>div.col-md-5>p {
     border: unset;
     border-radius: unset;
     padding: 1px 40px;
-    border-bottom: 1px solid #fe5dfd;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .intro-hr {
+        width: 50px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .win-big {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width:320px) {
+
+    .featured-links .card{
+        margin-top: 1rem;
+    }
+    .online-casino p{
+        text-align: justify;
+    }
+
+    .jackpot h3{
+        padding-left: 0;
+    }
+    .currency{
+        justify-content: center;
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+
+    .win-big{
+        margin-top: -18px;
+    }
+
+    .win-big p{
+        font-size: 20px;
+        letter-spacing: 9px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .currency li{
+        padding: 8px;
+    }
+
+    h2{
+        font-size: 41px;
+        line-height: 62px;
+    }
+
+    .intro-intro {
+        margin-left: 5px;
+    }
+    .intro-intro p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .crypto{
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: 449.98px) {
+
+    h2,
+    .win-big {
+        font-size: 51px;
+        line-height: 72px;
+    }
+}
+
+@media (min-width: 575.98px) {
+
+    .intro-intro p{
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .intro-hr{
+        width: 103px;
+    }
+
+    h2,
+    .win-big {
+        font-size: 61px;
+        line-height: 82px;
+    }
+}
+
+
+@media (min-width: 767.98px) {
+
+    .crypto{
+
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 4.92414px;
+    }
+    .currency li{
+
+        padding: 1rem;
+    }
+    .currency{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .intro-intro {
+        margin-left: 114px;
+    }
+    
+    .intro-hr{
+        width: 143px;
+    }
+    h2 {
+        font-size: 71px;
+        line-height: 92px;
+        letter-spacing: 12.6621px;
+    }
+
+    .win-big {
+        font-size: 61px;
+        line-height: 82px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* .currency{
+        justify-content: end;
+    } */
+    .win-big p {
+        font-size: 61px;
+        line-height: 82px;
+    }
+}
+
+@media(min-width: 991.98px) and (max-width: 1298.98px) {
+    .currency {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .win-big p {
+        font-size: 51px;
+        line-height: 72px;
+    }
 }
