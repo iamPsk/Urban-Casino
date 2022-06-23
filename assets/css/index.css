@@ -5,12 +5,12 @@
     margin: 0;
 }
 
-html {
+/* html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-}
+} */
 
 body {
     background: #000000;
@@ -35,7 +35,6 @@ h2 {
     padding-right: 28px;
     font-style: normal;
     font-weight: 700;
-
     text-transform: uppercase;
     z-index: 1;
     color: #000000;
@@ -54,7 +53,6 @@ h2 {
 .currency li {
     background: linear-gradient(180deg, #69A3A3 -32.87%, #5DFEFE 46.89%, #69A3A3 115.17%);
     border: 1px solid #65C6C6;
-    /* padding: 1rem; */
 }
 
 .currency li:nth-child(1),
@@ -68,14 +66,11 @@ h2 {
 }
 
 
-
 .featured-links .card {
     border: 1px solid #F7F930;
     background: #000;
     border-radius: unset;
 }
-
-
 
 .featured-links .card img {
     border-bottom: 1px solid #F7F930;
@@ -125,8 +120,6 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    /* font-size: 16px; */
-    /* line-height: 26px; */
     color: #FFFFFF;
     margin-bottom: 50px;
 }
@@ -135,7 +128,6 @@ h2 {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    /* margin-left: 114px; */
     flex-direction: row;
 }
 
@@ -172,10 +164,6 @@ h2 {
     height: 0;
 }
 
-/* .jackpot {
-    padding-bottom: 103px;
-} */
-
 .jackpot .card {
     background: transparent;
     border: none;
@@ -184,9 +172,6 @@ h2 {
 .jackpot h3 {
     font-style: normal;
     font-weight: 700;
-    /* font-size: 28px;
-    line-height: 36px; */
-    /* letter-spacing: 4.92414px; */
     text-transform: uppercase;
     color: #000000;
     background: #5DFEFE;
@@ -227,7 +212,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 
 .top-winners td {
     padding: 14px 0;
-    /* padding-left: 16px; */
 }
 
 .casino-benefits {
@@ -246,7 +230,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 .casino-benefits .card {
     background: unset;
     border: unset;
-    /* padding: 0; */
 }
 
 .casino-benefits .card-header {
@@ -265,25 +248,12 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .casino-benefits .card-text {
-    /* position: relative; */
     background: #fff;
     padding: 1rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    /* font-size: 20px; */
-    /* line-height: 30px; */
     color: #000000;
-}
-
-.casino-benefits .card-body::before {
-    /* content: '';
-    transform: skew(30deg);
-    position: absolute;
-    left: 50px;
-    background: #000;
-    right: 10px;
-    height: 36px; */
 }
 
 .casino-benefits h2,
@@ -291,33 +261,12 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     color: #000;
 }
 
-/* .nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-} */
-
 
 .combined-shape {
-    /* position: absolute;
-    top: -35px;
-    padding: 0;
-    left: 0;
-    right: 0; */
     margin-bottom: -1px;
 }
 
 .combined-shape-bottom {
-    /* padding: 0;
-    position: absolute;
-    bottom: -34px;
-    left: 0;
-    right: 0; */
     margin-top: -2px;
 }
 
@@ -325,18 +274,14 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     /* background: url("/assets/images/lotto.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    margin-top: -17px; */
 
-    /* align-items: center; */
-    /* position: relative; */
     background-color: #F7F930;
-    /* padding: 24px 0; */
+    padding: 24px 0;
     font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 700;
-    /* font-size: 7px; */
-    /* line-height: 92px; */
-
 }
 
 .win-big p {
@@ -438,15 +383,22 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     .intro-hr {
         width: 50px;
+    }
+
+    .col-xl-3.col-sm-6.mb-3{
+        padding: 0 !important;
     }
 }
 
 
 @media (min-width:320px) {
 
+    .currency li{
+        padding: 0.5rem;
+    }
     p,
     .casino-benefits .card-text {
         font-size: 15px;
@@ -482,10 +434,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 
     .currency {
         justify-content: center;
-    }
-
-    .win-big {
-        /* margin-top: -18px; */
     }
 
     .win-big p {
@@ -598,8 +546,8 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     }
 
     .currency {
-        font-size: 32px;
-        line-height: 38px;
+        /* font-size: 32px;
+        line-height: 38px; */
     }
 
 
