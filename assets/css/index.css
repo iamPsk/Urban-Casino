@@ -5,13 +5,6 @@
     margin: 0;
 }
 
-/* html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-} */
-
 body {
     background: #000000;
     color: #fff;
@@ -49,7 +42,6 @@ h2 {
     color: #000000;
 }
 
-
 .currency li {
     background: linear-gradient(180deg, #69A3A3 -32.87%, #5DFEFE 46.89%, #69A3A3 115.17%);
     border: 1px solid #65C6C6;
@@ -70,6 +62,34 @@ h2 {
     border: 1px solid #F7F930;
     background: #000;
     border-radius: unset;
+}
+
+.featured-links .card:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    transform: rotate(45deg);
+    border-bottom: 1px solid #F7F930;
+    right: -20px;
+    top: -20px;
+}
+
+.featured-links .col-sm-4 {
+    overflow: hidden;
+}
+
+.featured-links .card::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    bottom: -20px;
+    left: -20px;
+    transform: rotate(45deg);
+    border-top: 1px solid #f7f930;
 }
 
 .featured-links .card img {
@@ -175,7 +195,6 @@ h2 {
     text-transform: uppercase;
     color: #000000;
     background: #5DFEFE;
-    /* padding-left: 16px; */
 }
 
 .jackpot .top-winners {
@@ -188,11 +207,8 @@ h2 {
 
 
 
-body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-child(10) {
-    border-color: transparent;
-}
-
-.top-winners .list-group-item {
+.top-winners .list-group-item,
+body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-child(10){
     background: transparent;
 }
 
@@ -208,8 +224,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     background: url("/assets/images/Path\ 8.svg") right/cover no-repeat !important;
 }
 
-
-
 .top-winners td {
     padding: 14px 0;
 }
@@ -221,8 +235,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     background-position: bottom center;
 }
 
-
-
 .casino-benefits .intro-hr {
     color: #000;
 }
@@ -233,18 +245,14 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .casino-benefits .card-header {
-    background: url("/assets/images/carth3title.svg") no-repeat right/cover;
+    background: url("/assets/images/carth3title.png") no-repeat right/cover;
     padding-left: 16px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
     border-radius: unset;
-}
-
-
-.casino-benefits .card-body {
-    padding: 0;
+    border: none;
 }
 
 .casino-benefits .card-text {
@@ -271,12 +279,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .win-big {
-    /* background: url("/assets/images/lotto.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: -17px; */
-
     background-color: #F7F930;
     padding: 24px 0;
     font-family: 'Rajdhani', sans-serif;
@@ -285,9 +287,7 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 }
 
 .win-big p {
-    text-transform: uppercase;
     margin-bottom: 0;
-    /* letter-spacing: 5px; */
     text-transform: uppercase;
     color: #000000;
 }
@@ -308,10 +308,8 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     padding-bottom: 45px;
 }
 
-
-.view-more {
-    justify-content: center;
-    margin-bottom: 65px;
+.custom-gallery > img{
+    flex: 1 1 14%;
 }
 
 
@@ -358,7 +356,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
 
 .jack-heading {
     display: flex;
-    /* flex-wrap: nowrap; */
 }
 
 .jack-heading h3 {
@@ -370,14 +367,11 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     background: url("/assets/images/vbtn\ bgsvg.svg") right/cover no-repeat;
     font-style: normal;
     font-weight: 700;
-    /* font-size: 20px; */
-    /* line-height: 26px; */
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     border: unset;
     border-radius: unset;
-    /* padding: 1px 40px; */
 }
 
 
@@ -464,6 +458,9 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
         font-size: 1rem;
         padding: 3px 70px 3px 19px;
     }
+    .custom-gallery > img{
+        max-height: 200px;
+    }
 }
 
 @media (min-width: 449.98px) {
@@ -508,6 +505,11 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
         font-size: 61px;
         line-height: 82px;
     }
+
+    .custom-gallery > img{
+        max-height: 241px;
+    }
+    
 }
 
 
@@ -544,12 +546,6 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     .currency li {
         padding: 1rem;
     }
-
-    .currency {
-        /* font-size: 32px;
-        line-height: 38px; */
-    }
-
 
     .intro-intro {
         margin-left: 114px;
@@ -612,32 +608,11 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     .jack-heading h3{
         flex: 1 1 auto;
     }
-
-    /* .jack-heading button {
-        font-size: 1rem;
-        padding: 3px 70px 3px 19px;
-    } */
 }
 
 @media (min-width: 1199px) {
-
-    /* .currency{
-        justify-content: end;
-    } */
     .win-big p {
         letter-spacing: 12.6621px;
     }
 
 }
-
-/* @media(min-width: 991.98px) and (max-width: 1298.98px) {
-    .currency {
-        font-size: 22px;
-        line-height: 28px;
-    }
-
-    .win-big p {
-        font-size: 51px;
-        line-height: 72px;
-    }
-} */
