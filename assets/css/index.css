@@ -97,7 +97,8 @@ h2 {
 }
 
 .featured-links .card-title,
-.bank .card-title {
+.bank .card-title,
+.cryptonian .card-title {
     font-style: normal;
     font-weight: 600;
     font-size: 23px;
@@ -164,7 +165,8 @@ h2 {
 
 
 .intro-intro p,
-.bank .card-text {
+.bank .card-text,
+.cryptonian .card-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -312,13 +314,13 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     background-size: cover;
 }
 
-.begining,
+.bricks,
 .bank {
     background-image: url("/assets/images/Brick_darker2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
 }
 
 .bank .tw-heading {
@@ -415,7 +417,7 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     background-image: url("/assets/images/gold\ h3bg.png");
 }
 
-.gold-band {
+.band {
     /* background: url("/assets/images/Gold\ Band.png") no-repeat center/cover; */
     /* background-size: cover; */
     /* background-position: center; */
@@ -484,18 +486,20 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     padding: 1.5rem 0;
 } */
 
-.bank .gold-band {
+.bank .band {
     background: #F7F930;
 }
 
 
-.bank .card {
+.bank .card,
+.cryptonian {
     /* background: url("/assets/images/crypto\ overlay.png") no-repeat center; */
     background: #000000A6;
     border-color: #F7F930;
 }
 
-.bank .card-text {
+.bank .card-text,
+.cryptonian .card-text {
     text-transform: none;
 }
 
@@ -504,17 +508,38 @@ body>div.container.jackpot.p-5>div:nth-child(2)>div.col-md-4>table>tbody>tr:nth-
     right: 0;
 }
 
-.bank table.table{
+.bank table.table {
     border-collapse: separate;
     border-spacing: 0.75rem;
     width: 1154px;
     margin: auto;
 }
-table.table.my-5.top-winners td, table.table.my-5.top-winners th {
+
+table.table.my-5.top-winners td,
+table.table.my-5.top-winners th {
     width: 20%;
     vertical-align: middle;
 }
 
+#featureSlider h2{
+    line-height: 50px;
+    color: #000;
+}
+
+#featureSlider .crypto{
+    background: #000;
+}
+#featureSlider .carousel-control-next-icon{
+    background-image: url("/assets/images/next\ arrow\ icon.svg");
+}
+
+#featureSlider .carousel-control-prev-icon{
+    background-image: url("/assets/images/before\ arrow\ icon.svg");
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 12%;
+}
 @media (max-width: 575.98px) {
     .intro-hr {
         width: 50px;
@@ -550,7 +575,7 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     .currency,
     .jack-heading button,
     .casino-benefits .card-header,
-    .gold-band h2 {
+    .band h2 {
         font-size: 20px;
         line-height: 28px;
         letter-spacing: 1px;
@@ -580,7 +605,8 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     }
 
     .intro-intro p,
-    .bank .card-text {
+    .bank .card-text,
+    .cryptonian .card-text {
         font-size: 12px;
         line-height: 22px;
     }
@@ -632,7 +658,7 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     .currency,
     .jack-heading button,
     .casino-benefits .card-header,
-    .gold-band h2 {
+    .band h2 {
         font-size: 22px;
         line-height: 30px;
         letter-spacing: 2px;
@@ -648,7 +674,8 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
 @media (min-width: 575.98px) {
 
     .intro-intro p,
-    .bank .card-text {
+    .bank .card-text,
+    .cryptonian .card-text {
         font-size: 13px;
         line-height: 23px;
     }
@@ -668,7 +695,7 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     .currency,
     .jack-heading button,
     .casino-benefits .card-header,
-    .gold-band h2 {
+    .band h2 {
         font-size: 27px;
         line-height: 35px;
     }
@@ -679,10 +706,72 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
 
 }
 
+.mr-crypto {
+    width: 100%;
+    max-width: 739px;
+    right: -50px;
+    top: 85px;
+}
+
+.mr-crypto-pointer {
+    left: 0;
+    bottom: -50px;
+}
+
+.about-crypto .band{
+    background: #f7f930;
+}
+.about-crypto .carousel-indicators {
+    bottom: unset;
+    top: -120px;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    /* background: #fff; */
+}
+
+.about-crypto .carousel-indicators [data-bs-target] {
+    width: auto;
+    height: auto;
+    text-indent: initial;
+    opacity: 1;
+    background: transparent;
+
+
+    font-size: 30px;
+    line-height: 58px;
+    letter-spacing: 1.73077px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.about-crypto .carousel-inner {
+    background: url("/assets/images/blueEFF.png") no-repeat center/cover;
+}
+
+#featureSlider .carousel-item{
+    
+}
+
+.about-crypto .carousel-indicators [data-bs-target].active{
+    color: #5DFEFE;
+}
+
+.custom-slider{
+    background: url("/assets/images/featureslider.png");
+}
+/* .about-crypto .carousel-indicators */
+
+body>main>div.bricks.pt-5.px-sm-3.px-md-4.px-xl-5>div.position-relative.pt-5.row {
+    overflow-x: clip;
+}
 
 @media (min-width: 767.98px) {
 
-    .bank .gold-band h2 {
+    .bank .band h2 {
         font-size: 32px;
         line-height: 38px;
         text-align: center;
@@ -708,7 +797,7 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     h3,
     .currency,
     .casino-benefits .card-header,
-    .gold-band h2 {
+    .band h2 {
         font-size: 28px;
         line-height: 36px;
         letter-spacing: 4.92414px;
@@ -772,7 +861,7 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
         letter-spacing: 12.6621px;
     }
 
-    .gold-band h2 {
+    .band h2 {
         font-weight: 700;
         font-size: 52px;
         line-height: 58px;
@@ -790,7 +879,8 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
     }
 
     .intro-intro p,
-    .bank .card-text {
+    .bank .card-text,
+    .cryptonian .card-text {
         font-size: 15px;
         line-height: 25px;
     }
@@ -815,6 +905,12 @@ table.table.my-5.top-winners td, table.table.my-5.top-winners th {
         line-height: 29px;
         text-transform: uppercase;
         color: #FFFFFF;
+    }
+
+    .about-crypto .carousel-indicators [data-bs-target] {
+        font-size: 30px;
+        line-height: 1rem;
+        letter-spacing: 1.73077px;
     }
 }
 
