@@ -340,9 +340,9 @@ td {
 }
 
 table.table:not(table.top-winners) {
-    border-collapse: separate;
-    border-spacing: 0.75rem;
-    /* width: 1154px; */
+    /* border-collapse: separate; */
+    /* border-spacing: 0.75rem; */
+    width: 1200px;
     margin: auto;
 }
 
@@ -353,7 +353,8 @@ table.table.my-5.top-winners th {
 }
 
 thead>tr {
-    border: unset;
+    border: 0 !important;
+    border: unset !important;
 }
 
 .accordion-button::after {
@@ -567,10 +568,10 @@ thead>tr {
 
     .band p,
     .header-lg {
-        font-size: 52px !important;
-        line-height: 58px !important;
+        font-size: 52px;
+        line-height: 58px ;
         text-align: center;
-        letter-spacing: 5px !important;
+        letter-spacing: 5px;
     }
 
     .currency li {
