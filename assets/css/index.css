@@ -316,7 +316,7 @@ td {
 }
 
 
-.pointer-2{
+.pointer-2 {
     right: -155px;
     bottom: -100px;
 }
@@ -361,22 +361,22 @@ thead>tr {
     background-image: url(/assets/images/accordion\ btn\ icon.svg) !important;
 }
 
-.accordion-item{
+.accordion-item {
     background: url(/assets/images/blueoverlay.png);
     background-position: center 0;
     background-repeat: no-repeat;
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
 }
 
-.clip-x{
+.clip-x {
     overflow-x: clip !important;
 }
 
-.gold-bg{
+.gold-bg {
     background: radial-gradient(512.38% 298.35% at 40.05% 50%, #F5D03F 0%, #A88200 100%)
 }
 
-.btn:hover{
+.btn:hover {
     border: 0;
 }
 
@@ -384,11 +384,22 @@ thead>tr {
     background: black !important;
 }
 
-.pe-7{
+.pe-7 {
     padding-right: 6rem !important;
 }
+
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+    z-index: 1;
+    color: unset;
+    text-decoration: none;
+    background-color: unset;
+}
+
 @media (min-width: 0px) {
-    .roboto-sm, .text-med {
+
+    .roboto-sm,
+    .text-med {
         font-size: 16px !important;
         line-height: 21px !important;
         letter-spacing: normal !important;
@@ -403,7 +414,8 @@ thead>tr {
         width: 50px;
     }
 
-    h2, p.win-big {
+    h2,
+    p.win-big {
         font-size: 35px;
         line-height: 45px;
         letter-spacing: 3px;
@@ -412,12 +424,12 @@ thead>tr {
     h3,
     .sub-intro,
     .header-sm {
-        font-size: 18px ;
-        line-height: 26px ;
+        font-size: 18px;
+        line-height: 26px;
         letter-spacing: 2.46207px;
     }
 
-    .header-sm{
+    .header-sm {
         letter-spacing: normal !important;
     }
 
@@ -530,14 +542,15 @@ thead>tr {
         width: 143px;
     }
 
-    h2, p.win-big {
+    h2,
+    p.win-big {
         font-size: 72px !important;
-        line-height: 92px ;
+        line-height: 92px;
         letter-spacing: 12.6621px;
         text-transform: uppercase;
     }
 
-    p.win-big{
+    p.win-big {
         letter-spacing: 3.92308px !important;
         line-height: 58px !important;
     }
@@ -569,8 +582,15 @@ thead>tr {
     .band p,
     .header-lg {
         font-size: 52px;
-        line-height: 58px ;
+        line-height: 58px;
         text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .header-lg {
+        font-size: 52px !important;
+        line-height: 58px !important;
+        /* text-align: center; */
         letter-spacing: 5px;
     }
 
@@ -602,10 +622,11 @@ thead>tr {
         text-transform: uppercase; */
     }
 
-    .bg-xl-100{
+    .bg-xl-100 {
         background-size: 100% 100%;
     }
-    .bg-cover-xl{
+
+    .bg-cover-xl {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
