@@ -143,8 +143,6 @@ p {
 
 .header-sm {
     font-weight: 600;
-    font-size: 23px;
-    line-height: 29px;
     text-transform: uppercase;
     color: #F7F930;
 }
@@ -318,6 +316,11 @@ td {
 }
 
 
+.pointer-2{
+    right: -155px;
+    bottom: -100px;
+}
+
 .list-group-item {
     background: transparent;
     border: none;
@@ -407,10 +410,9 @@ thead>tr {
 
     h3,
     .sub-intro,
-    .header-sm,
-    .underground h2 {
-        font-size: 18px !important;
-        line-height: 26px !important;
+    .header-sm {
+        font-size: 18px ;
+        line-height: 26px ;
         letter-spacing: 2.46207px;
     }
 
@@ -453,6 +455,14 @@ thead>tr {
         font-size: 45px;
         line-height: 55px;
         letter-spacing: 4px;
+    }
+
+    .header-sm {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        text-transform: uppercase;
+        color: #F7F930;
     }
 
     .roboto-sm {
@@ -557,10 +567,10 @@ thead>tr {
 
     .band p,
     .header-lg {
-        font-size: 52px;
-        line-height: 58px;
+        font-size: 52px !important;
+        line-height: 58px !important;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: 5px !important;
     }
 
     .currency li {
