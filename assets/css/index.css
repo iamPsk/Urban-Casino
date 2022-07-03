@@ -601,6 +601,15 @@ thead>tr {
         letter-spacing: 5px;
         text-transform: uppercase; */
     }
+
+    .bg-xl-100{
+        background-size: 100% 100%;
+    }
+    .bg-cover-xl{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 /* @media (min-width: 767.9px) and (max-width: 998.9px) {
