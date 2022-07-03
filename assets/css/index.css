@@ -327,7 +327,7 @@ td {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    text-align: justify;
+    /* text-align: justify; */
     color: #000000;
 }
 
@@ -380,10 +380,13 @@ thead>tr {
     background: black !important;
 }
 
+.pe-7{
+    padding-right: 6rem !important;
+}
 @media (min-width: 0px) {
-    .roboto-sm {
-        font-size: 25px !important;
-        line-height: 30px !important;
+    .roboto-sm, .text-med {
+        font-size: 16px !important;
+        line-height: 21px !important;
         letter-spacing: normal !important;
     }
 
@@ -403,12 +406,17 @@ thead>tr {
     }
 
     h3,
-    .sub-intro {
-        font-size: 18px;
-        line-height: 26px;
+    .sub-intro,
+    .header-sm,
+    .underground h2 {
+        font-size: 18px !important;
+        line-height: 26px !important;
         letter-spacing: 2.46207px;
     }
 
+    .header-sm{
+        letter-spacing: normal !important;
+    }
 
     p {
         /* font-size: 1rem;
@@ -445,6 +453,12 @@ thead>tr {
         font-size: 45px;
         line-height: 55px;
         letter-spacing: 4px;
+    }
+
+    .roboto-sm {
+        font-size: 25px !important;
+        line-height: 30px !important;
+        letter-spacing: normal !important;
     }
 
     h3,
