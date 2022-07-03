@@ -25,6 +25,12 @@ body {
     text-transform: uppercase;
 }
 
+.bg-image-e {
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .intro {
     font-family: 'Roboto';
     font-style: normal;
@@ -331,7 +337,7 @@ td {
     font-style: normal;
     font-weight: 400;
     /* text-align: justify; */
-    color: #000000;
+    /* color: #000000; */
 }
 
 .pointer-arrow {
@@ -396,6 +402,16 @@ thead>tr {
     background-color: unset;
 }
 
+.form-select:focus {
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+}
+
+.btn-filter{
+    bottom: 0;
+    right: -30px;
+}
 @media (min-width: 0px) {
 
     .roboto-sm,
@@ -509,6 +525,11 @@ thead>tr {
 }
 
 @media (min-width: 767.98px) {
+
+    .position-lg-absolute{
+        position: absolute !important;
+    }
+
     .table tbody>*>* {
         padding: 1rem 0.5rem;
     }
@@ -544,7 +565,7 @@ thead>tr {
 
     h2,
     p.win-big {
-        font-size: 72px !important;
+        font-size: 72px;
         line-height: 92px;
         letter-spacing: 12.6621px;
         text-transform: uppercase;
