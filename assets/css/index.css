@@ -52,7 +52,8 @@ h2,
     font-weight: 700;
 }
 
-p {
+p,
+.p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -66,6 +67,10 @@ p {
     background-color: #F7F930 !important;
 }
 
+.bg-green{
+    --bs-bg-opacity:1;
+    background-color: #02FFB9 !important;
+}
 .text-blue {
     color: #00ffff !important;
 }
@@ -378,10 +383,18 @@ thead>tr {
     overflow-x: clip !important;
 }
 
-.gold-bg {
+.bg-top{
+    background-position: top center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.bg-gold {
     background: radial-gradient(512.38% 298.35% at 40.05% 50%, #F5D03F 0%, #A88200 100%)
 }
 
+.bg-pbox{
+    background-origin: padding-box;
+}
 .btn:hover {
     border: 0;
 }
@@ -576,7 +589,8 @@ thead>tr {
         line-height: 58px !important;
     }
 
-    p {
+    p,
+    .p {
         font-size: 20px;
         line-height: 30px;
     }
