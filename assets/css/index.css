@@ -16,9 +16,10 @@ body {
     height: 1px;
 }
 
+
 .sub-intro {
-    /* background: url("/assets/images/sub\ intro\ bg.png") center right/cover no-repeat;
-    width: fit-content; */
+    background: url("/assets/images/sub\ intro\ bg.png") center right/cover no-repeat;
+    width: fit-content;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
@@ -59,6 +60,15 @@ p {
     background-color: #F7F930 !important;
 }
 
+.text-blue {
+    color: #00ffff !important;
+}
+
+.text-yellow {
+    color: #F7F930 !important;
+}
+
+
 /* .win-big {
     background-color: #F7F930;
     font-style: normal;
@@ -89,6 +99,10 @@ p {
 
 .bd-yellow {
     border: 1px solid #F7F930;
+}
+
+.purple-overlay {
+    background-image: url('/assets/images/Group\ 1.png');
 }
 
 .featured-links .card:before {
@@ -135,7 +149,8 @@ p {
     color: #F7F930;
 }
 
-.text-sm {
+.text-sm,
+.text-med {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -144,6 +159,13 @@ p {
     letter-spacing: 0.5px;
     color: #FFFFFF;
 }
+
+.text-med {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
 
 h3 {
     font-weight: 700;
@@ -194,9 +216,11 @@ td {
     border-radius: 0;
     background-position: center right;
     background-size: cover;
+    width: 100%;
     /* padding: 1.25rem; */
     max-width: 12.8125rem;
-    height: auto;
+    /* height: auto; */
+    height: 2.875rem;
 }
 
 
@@ -208,11 +232,12 @@ td {
 .bg-image,
 .bg-image-b {
     /* position: relative; */
-    overflow: hidden;
+    /* overflow: hidden; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .bg-image-b {
     background-position: bottom !important;
     background-size: auto;
@@ -229,7 +254,7 @@ td {
 }
 
 
-.features .carousel-inner{
+.features .carousel-inner {
     background: url(/assets/images/blueEFF.png) no-repeat bottom right/cover
 }
 
@@ -257,9 +282,10 @@ td {
     color: #FFFFFF;
 }
 
-.features h2{
+.features h2 {
     color: black !important;
 }
+
 .features .carousel-indicators [data-bs-target].active {
     color: #5DFEFE;
 }
@@ -268,28 +294,99 @@ td {
 #featureSlider .carousel-control-next-icon {
     background-image: url(/assets/images/next\ arrow\ icon.svg);
 }
+
 #featureSlider .carousel-control-prev-icon {
     background-image: url(/assets/images/before\ arrow\ icon.svg);
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     width: 12%;
 }
 
 
-.light-overlay{
+.light-overlay {
     background-image: url('/assets/images/light\ gold\ overlay.png');
-    
+
 }
 
 
-.pointer-1{
+.pointer-1 {
     right: -155px;
     bottom: 0;
     transform: translate(0, -50%);
 }
 
+
+.list-group-item {
+    background: transparent;
+    border: none;
+}
+
+.roboto-sm {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    color: #000000;
+}
+
+.pointer-arrow {
+    top: 155px;
+    right: 0;
+}
+
+table.table:not(table.top-winners) {
+    border-collapse: separate;
+    border-spacing: 0.75rem;
+    /* width: 1154px; */
+    margin: auto;
+}
+
+table.table.my-5.top-winners td,
+table.table.my-5.top-winners th {
+    width: 20%;
+    vertical-align: middle;
+}
+
+thead>tr {
+    border: unset;
+}
+
+.accordion-button::after {
+    background-image: url(/assets/images/accordion\ btn\ icon.svg) !important;
+}
+
+.accordion-item{
+    background: url(/assets/images/blueoverlay.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+}
+
+.clip-x{
+    overflow-x: clip !important;
+}
+
+.gold-bg{
+    background: radial-gradient(512.38% 298.35% at 40.05% 50%, #F5D03F 0%, #A88200 100%)
+}
+
+.btn:hover{
+    border: 0;
+}
+
+.features span.sub-intro {
+    background: black !important;
+}
+
 @media (min-width: 0px) {
+    .roboto-sm {
+        font-size: 25px !important;
+        line-height: 30px !important;
+        letter-spacing: normal !important;
+    }
+
     .intro {
         font-size: 12px;
         line-height: 22px;
@@ -299,8 +396,7 @@ td {
         width: 50px;
     }
 
-    h2,
-    .band p {
+    h2, p.win-big {
         font-size: 35px;
         line-height: 45px;
         letter-spacing: 3px;
@@ -362,13 +458,21 @@ td {
     .currency li {
         padding: 0.65rem;
     }
+
     .custom-gallery>img {
         max-height: 240px;
+    }
+
+    .text-lag {
+        font-size: 32px !important;
+        line-height: 38px !important;
+        text-align: center !important;
+        letter-spacing: 3.07692px !important;
     }
 }
 
 @media (min-width: 767.98px) {
-    .table>:not(caption)>*>* {
+    .table tbody>*>* {
         padding: 1rem 0.5rem;
     }
 
@@ -377,9 +481,16 @@ td {
         line-height: 26px;
     }
 
-    .band p{
+    .band p {
         font-size: 40px;
         line-height: 48px;
+    }
+
+    .header-md {
+        font-size: 42px;
+        line-height: 54px;
+        letter-spacing: 7.38621px;
+        text-transform: uppercase;
     }
 }
 
@@ -394,11 +505,16 @@ td {
         width: 143px;
     }
 
-    h2 {
-        font-size: 72px;
-        line-height: 92px;
+    h2, p.win-big {
+        font-size: 72px !important;
+        line-height: 92px ;
         letter-spacing: 12.6621px;
         text-transform: uppercase;
+    }
+
+    p.win-big{
+        letter-spacing: 3.92308px !important;
+        line-height: 58px !important;
     }
 
     p {
@@ -425,7 +541,8 @@ td {
 
     }
 
-    .band p {
+    .band p,
+    .header-lg {
         font-size: 52px;
         line-height: 58px;
         text-align: center;
@@ -433,7 +550,7 @@ td {
     }
 
     .currency li {
-        padding: 1rem 0.75rem;
+        padding: 1rem;
     }
 
     .features .carousel-indicators [data-bs-target] {
@@ -441,24 +558,29 @@ td {
         line-height: 1rem;
         letter-spacing: 1.73077px;
     }
-    .features h2{
+
+    .features h2 {
         line-height: 50px;
     }
 }
 
 @media (min-width: 1200px) {
     .hr {
+        margin-left: 112px;
         width: 143px;
     }
 
-    /* .band p {
-        font-size: 72px;
+    .band p {
+        /* font-size: 72px;
         line-height: 92px;
         letter-spacing: 5px;
-        text-transform: uppercase;
-    } */
+        text-transform: uppercase; */
+    }
 }
 
+/* @media (min-width: 767.9px) and (max-width: 998.9px) {
+    
+} */
 /* @media (min-width: 1400px) {
 
     .container,

@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/index-bg.css">
 </head>
 
 <body>
@@ -33,17 +34,17 @@
         </div> -->
         </section>
 
-        <div class="bricks-darker">
+        <div style="background-image: url('./assets/images/Brick_darker2.png');" class="bg-image">
             <div class="px-4 pt-5 text-center">
 
                 <!-- <h1 class="display-5 fw-bold">Centered hero</h1> -->
-                <div class="col-lg-4 mx-auto">
-                    <div class="card gold-card position-relative mx-auto rounded-0">
+                <div class="col-lg-5 mx-auto">
+                    <div style="background-image: url('./assets/images/ligh\ gold.png');" class="card mx-auto bg-transparent bg-100 position-relative rounded-0">
                         <img class="d-block position-absolute" src="/assets/images/pointer2.png" alt="" width="146" height="176">
                         <div class="card-body">
-                            <h5 class="card-title">We understand that finding your way around a new city can be a bit
+                            <h5 class="card-title header-sm text-start">We understand that finding your way around a new city can be a bit
                                 daunting</h5>
-                            <p class="card-text">That is why our customer service here at the City Navigation Support
+                            <p class="card-text intro text-start">That is why our customer service here at the City Navigation Support
                                 Center is the best that you will find to get your back on track.</p>
                         </div>
                     </div>
@@ -52,26 +53,32 @@
 
 
             <div class="container-xxl col px-4 py-5">
-                <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="./assets/images/mr cyypo flying kick.png" class="d-block mx-lg-auto img-fluid"
+                        <img src="./assets/images/mr cyypo flying kick.png" class="d-block mx-lg-auto"
                             alt="Bootstrap Themes" width="702" height="736" loading="lazy">
                     </div>
                     <div class="col-lg-6">
-                        <h2 class="mb-4">
+
+                        <div class="d-flex align-items-center pt-5">
+                            <div class="hr bg-white"></div>
+                            <p class="m-0 intro ps-4 ps-md-5">City Navigation Support Center</p>
+                        </div>
+                        <h2 class="mb-4 text-uppercase">
                             contact
-                            <span class="crypto">
+                            <span class="sub-intro d-block text-black ps-3 pe-4">
                                 24/7 Support
                             </span>
                         </h2>
+                        
 
                         <p class="mb-3">If you have any queries, struggling with something technical or just need to
                             understand how things operate here, you can contact us 24/7.</p>
                         <p>We have compiled a handy list of customer questions in the FAQs section (link) that we have
                             answered and might assist you with what you are wantng to know. </p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <div class="d-grid mt-4 gap-2 d-md-flex justify-content-md-start">
                             <!-- <div class="btn-bg"> -->
-                            <button type="button" class="btn btn-bg btn-lg px-4 me-md-2">View FAQs</button>
+                            <button type="button" class="btn text-white btn-bg px-4 me-md-2">View FAQs</button>
                             <!-- </div> -->
                         </div>
                     </div>
@@ -83,47 +90,47 @@
                 <div class="row g-5 pb-5">
 
                     <div class="col-lg-5">
-                        <h2 class="mb-4">
-                            details
-                            <span class="crypto">
+                        <h2 class="mb-4 text-uppercase">
+                            Details
+                            <span class="sub-intro d-block text-black ps-3 pe-4">
                                 24/7 Support
                             </span>
                         </h2>
                         <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1> -->
                         <p class="lead">If you can’t find what you are looking for there, you can contact us via the
                             following channels:</p>
-                        <div class="list-group list-group-flush w-auto">
-                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                        <div class="list-group list-group-flush mb-3 w-auto">
+                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center"
                                 aria-current="true">
                                 <img src="/assets/images/chat icon.svg" alt="mail icon" width="70" height="70"
                                     class="rounded-circle flex-shrink-0">
                                 <div class="d-flex gap-2 w-100 justify-content-between">
                                     <div>
-                                        <h6 class="mb-0">Chat with us live</h6>
-                                        <p class="mb-0 opacity-75">Start chating</p>
+                                        <h6 class="mb-0 text-med">Chat with us live</h6>
+                                        <p class="mb-0 text-yellow">Start chating</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center"
                                 aria-current="true">
                                 <img src="/assets/images/mail icon.svg" alt="twbs" width="70" height="70"
                                     class="rounded-circle flex-shrink-0">
                                 <div class="d-flex gap-2 w-100 justify-content-between">
                                     <div>
-                                        <h6 class="mb-0">Another title here</h6>
-                                        <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a
+                                        <h6 class="mb-0 text-med">Another title here</h6>
+                                        <p class="mb-0 text-yellow">Some placeholder content in a paragraph that goes a
                                             little longer so it wraps to a new line.</p>
                                     </div>
                                 </div>
                             </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center"
                                 aria-current="true">
                                 <img src="/assets/images/payment icon.svg" alt="twbs" width="70" height="70"
                                     class="rounded-circle flex-shrink-0">
                                 <div class="d-flex gap-2 w-100 justify-content-between">
                                     <div>
-                                        <h6 class="mb-0">Third heading</h6>
-                                        <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+                                        <h6 class="mb-0 text-med">Third heading</h6>
+                                        <p class="mb-0 text-yellow">Some placeholder content in a paragraph.</p>
                                     </div>
 
                                 </div>
@@ -135,23 +142,24 @@
                     </div>
 
                     <div class="col-lg-7">
-                        <div class="card blue-bg bg-transparent p-5 text-white">
+                        <div style="background-image: url('./assets/images/blueEFF.png')" class="card bg-transparent bg-100 p-5 text-white">
                             <!-- <img src="./assets/images/blueEFF.png" class="card-img" alt="..."> -->
                             <div class="card-body">
-                                <h2 class="mb-4">
+                                <h2 class="mb-4 text-uppercase header-lg text-start text-black">
                                     Forgort Password
-                                    <span class="crypto">
+                                    <span class="sub-intro d-block text-white bg-black ps-3 pe-4">
                                         Reset it below
                                     </span>
                                 </h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
+
+                                <p class="card-text text-black mb-5">This is a wider card with supporting text below as a natural
                                     lead-in to additional content. This content is a little bit longer.</p>
                                 <form>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Username</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                        <label for="exampleInputEmail1" class="form-label text-md text-black">Username</label>
+                                        <input type="email" class="form-control rounded-0" id="exampleInputEmail1"
                                             aria-describedby="emailHelp">
-                                        <div id="emailHelp" class="form-text">Forgot your username</div>
+                                        <div id="emailHelp" class="form-text intro">Forgot your username</div>
                                     </div>
 
                                     <button type="submit" style="right: 62px; bottom: 44px;" class="btn btn-bg position-absolute">Submit</button>
