@@ -108,6 +108,10 @@ p,
     margin-top: -2px;
 }
 
+.band-top{
+    margin-bottom: -2px;
+}
+
 .bd-yellow {
     border: 1px solid #F7F930;
 }
@@ -425,6 +429,8 @@ thead>tr {
     bottom: 0;
     right: -30px;
 }
+
+
 @media (min-width: 0px) {
 
     .roboto-sm,
@@ -444,7 +450,7 @@ thead>tr {
     }
 
     h2,
-    p.win-big {
+    .band p.win-big {
         font-size: 35px;
         line-height: 45px;
         letter-spacing: 3px;
@@ -577,14 +583,14 @@ thead>tr {
     }
 
     h2,
-    p.win-big {
+    .band p.win-big {
         font-size: 72px;
         line-height: 92px;
         letter-spacing: 12.6621px;
         text-transform: uppercase;
     }
 
-    p.win-big {
+    .band p.win-big {
         letter-spacing: 3.92308px !important;
         line-height: 58px !important;
     }
