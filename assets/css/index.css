@@ -173,11 +173,6 @@ p,
     color: #FFFFFF;
 }
 
-.text-med {
-    font-size: 20px;
-    line-height: 30px;
-}
-
 
 
 h3 {
@@ -451,8 +446,8 @@ thead>tr {
 
     .roboto-sm,
     .text-med {
-        font-size: 16px !important;
-        line-height: 21px !important;
+        font-size: 16px ;
+        line-height: 21px ;
         letter-spacing: normal !important;
     }
 
@@ -505,6 +500,10 @@ thead>tr {
 }
 
 @media (min-width: 575.98px) {
+    .text-med {
+        font-size: 20px;
+        line-height: 30px;
+    }
     .intro {
         font-size: 15px;
         line-height: 25px;
