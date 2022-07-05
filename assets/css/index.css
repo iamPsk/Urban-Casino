@@ -441,7 +441,13 @@ thead>tr {
     right: -30px;
 }
 
+.border-b{
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
 
+.border-yellow{
+    border-color: #F7F930 !important;
+}
 @media (min-width: 0px) {
 
     .roboto-sm,
