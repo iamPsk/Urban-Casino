@@ -212,7 +212,7 @@ td {
 .bg-100 {
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    /* background-position: bottom center; */
 }
 
 .card-header {
