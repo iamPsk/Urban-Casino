@@ -27,18 +27,19 @@
             </div>
         </div>
 
-        <div class="underground bricks-darker bg-image bg-image-b py-5">
+        <div class="clip-x bricks-darker bg-image bg-image-b py-5">
 
 
             <div class="container-xxl px-xl-5 pt-xl-5">
-                <div class="row flex-lg-row-reverse align-items-end g-5">
-                    <div class="col-10 col-sm-8 col-lg-5">
-                        <img src="./assets/images/mr cryptonian.svg" class="d-block mb-5 mx-lg-auto"
+                <div class="row flex-lg-row-reverse flex-column-reverse align-items-end g-5">
+                    <div class="col-10 col-lg-5 col-sm-8 d-lg-block d-none">
+                        <img src="./assets/images/mr cryptonian.svg" class="d-block mb-5 mx-auto img-fluid-md"
                             alt="Bootstrap Themes" width="auto" height="686" loading="lazy">
                     </div>
                     <div class="col-lg-7">
-                        
-                        <div style="background-image: url('./assets/images/ligh\ gold.png');" class="card bg-100 mb-5 border-1 bg-transparent border-0 rounded-0 p-md-4 position-relative">
+
+                        <div style="background-image: url('./assets/images/ligh\ gold.png');"
+                            class="card bg-100 mb-5 border-1 bg-transparent border-0 rounded-0 p-md-4 position-relative">
                             <div class="card-body">
                                 <h5 class="card-title header-sm">Welcome to the Crypto Crypt of UrbanCasino, my name is
                                     Mr Cryptonian.
@@ -48,8 +49,15 @@
                                     Am I
                                     right? Thought so. So let’s begin with the basics shall we…</p>
                             </div>
-                            <img src="./assets/images/mr crypto pointer.svg" alt="" class="pointer-1 position-absolute">
+
+                            <img src="./assets/images/mr crypto pointer.svg" alt=""
+                                class="pointer-1 position-absolute d-none d-lg-block">
                         </div>
+
+                        <img src="./assets/images/mr cryptonian.svg" class="d-block d-lg-none mb-5 mx-auto img-fluid-md"
+                            alt="Bootstrap Themes" width="auto" height="686" loading="lazy">
+                        <!-- <div class="col-sm-8 ms-auto">
+                        </div> -->
 
                         <div class="d-flex align-items-center pt-5">
                             <div class="hr bg-white"></div>
@@ -58,7 +66,8 @@
 
                         <h2 class="mb-4 text-uppercase">
                             About
-                            <span style="background-image: url('./assets/images/sub\ intro\ bg.png');" class="sub-intro d-block text-black ps-3 pe-4">
+                            <span style="background-image: url('./assets/images/sub\ intro\ bg.png');"
+                                class="sub-intro d-block text-black ps-3 pe-4">
                                 Cryptocurrencies
                             </span>
                         </h2>
@@ -108,45 +117,51 @@
         </div>
 
 
-        <div style="background-image: url('./assets/images/featureslider.png'); margin-top: -28px;" class="py-5 bg-image">
+        <div style="background-image: url('./assets/images/featureslider.png'); margin-top: -28px;"
+            class="py-5 bg-image">
             <div class="container-xxl px-xl-5 py-xl-5">
                 <div class="row pb-5">
                     <div class="col-lg-9 mx-auto pt-5 mt-5">
-                        <div id="featureSlider" class="carousel slide features" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <div>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="0"
-                                        aria-current="true" aria-label="Slide 1">Fees</button>
-                                    <button type="button" class="active" data-bs-target="#featureSlider"
-                                        data-bs-slide-to="1" aria-label="Slide 2">Efficiency</button>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="2"
-                                        aria-label="Slide 3">decentralised</button>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="3"
-                                        aria-current="true" aria-label="Slide 4">Security</button>
-                                </div>
-                                <div>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="4"
-                                        aria-label="Slide 5">protection</button>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="5"
-                                        aria-label="Slide 6">Wallet</button>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="6"
-                                        aria-label="Slide 7">Purchase</button>
-                                    <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="7"
-                                        aria-label="Slide 8">Spend</button>
-                                </div>
+                        <div id="featureSlider" class="carousel slide features" data-bs-touch="true" data-bs-ride="true">
+
+                            
+                            <div class="carousel-indicators flex-wrap">
+
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="0"
+                                    aria-label="Slide 1" class="active" aria-current="true">Fees</button>
+                                <button type="button" class="" data-bs-target="#featureSlider" data-bs-slide-to="1"
+                                    aria-label="Slide 2">Efficiency</button>
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="2"
+                                    aria-label="Slide 3" class="">decentralised</button>
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="3"
+                                    aria-label="Slide 4" class="">Security</button>
+
+
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="4"
+                                    aria-label="Slide 5" class="">protection</button>
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="5"
+                                    aria-label="Slide 6" class="">Wallet</button>
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="6"
+                                    aria-label="Slide 7" class="">Purchase</button>
+                                <button type="button" data-bs-target="#featureSlider" data-bs-slide-to="7"
+                                    aria-label="Slide 8" class="">Spend</button>
+
                             </div>
-                            <div style="background-image: url('./assets/images/blueEFF.png');" class="carousel-inner p-5 bg-image bg-xl-100">
+                            
+                            <div style="background-image: url('./assets/images/blueEFF.png');"
+                                class="carousel-inner p-3 p-sm-5 p-xl-5 bg-image bg-xl-100">
                                 <div class="carousel-item">
 
                                     <div class="px-md-5">
 
-                                        <h2 class="mb-5 text-center text-white">
+                                        <h2 class="mb-5 text-center text-white text-uppercase">
                                             Fees
-                                            <span class="px-5 d-block mt-3 pt-1 mx-auto text-white sub-intro bg-black text-center">
+                                            <span
+                                                class="px-5 d-block mt-3 pt-1 mx-auto text-white sub-intro bg-black text-center">
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -161,7 +176,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -177,13 +192,13 @@
 
                                     <div class="px-md-5">
 
-                                        <h2 class="mb-5 text-center text-white">
+                                        <h2 class="mb-5 text-center text-white text-uppercase">
                                             Efficiency
                                             <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -198,7 +213,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -214,13 +229,13 @@
 
                                     <div class="px-md-5">
 
-                                        <h2 class="mb-5 text-center text-white">
+                                        <h2 class="mb-5 text-center text-white text-uppercase">
                                             decentralised
                                             <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -235,7 +250,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -251,13 +266,13 @@
 
                                     <div class="px-md-5">
 
-                                        <h2 class="mb-5 text-center text-white">
+                                        <h2 class="mb-5 text-center text-white text-uppercase">
                                             Efficiency
                                             <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -272,44 +287,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
-                                            But, once again, cryptocurrencies are changing all that by offering the
-                                            transfer of
-                                            funds in
-                                            as little time as 10 minutes no matter where in the world they are being
-                                            transferred
-                                            to.
-                                        </p>
-                                    </div>
-
-
-                                </div>
-                                <div class="carousel-item">
-
-                                    <div class="px-md-5">
-
-                                        <h2 class="mb-5 text-center  text-white">
-                                            Efficiency
-                                            <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
-                                                For Cryptocurrencies
-                                            </span>
-                                        </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
-                                            of
-                                            transactions at financial institutions can take longer than
-                                            expected, especially when it comes to international transactions that can
-                                            take up to
-                                            a
-                                            number of days for the transfer to be completed.
-
-                                            But, once again, cryptocurrencies are changing all that by offering the
-                                            transfer of
-                                            funds in
-                                            as little time as 10 minutes no matter where in the world they are being
-                                            transferred
-                                            to.
-                                        </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -331,7 +309,7 @@
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -346,7 +324,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -368,7 +346,7 @@
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -383,7 +361,7 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -399,13 +377,13 @@
 
                                     <div class="px-md-5">
 
-                                        <h2 class="mb-5 text-center text-white">
+                                        <h2 class="mb-5 text-center  text-white">
                                             Efficiency
                                             <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
                                                 For Cryptocurrencies
                                             </span>
                                         </h2>
-                                        <p class="bg-light text-dark p-md-4 mb-0 text-left">As we all know, processing
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
                                             of
                                             transactions at financial institutions can take longer than
                                             expected, especially when it comes to international transactions that can
@@ -420,7 +398,44 @@
                                             transferred
                                             to.
                                         </p>
-                                        <p class="bg-light text-dark px-md-4 text-left pb-md-5">
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
+                                            But, once again, cryptocurrencies are changing all that by offering the
+                                            transfer of
+                                            funds in
+                                            as little time as 10 minutes no matter where in the world they are being
+                                            transferred
+                                            to.
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <div class="carousel-item">
+
+                                    <div class="px-md-5">
+
+                                        <h2 class="mb-5 text-center text-white text-uppercase">
+                                            Efficiency
+                                            <span class="px-5 d-inline-block text-white sub-intro bg-black text-center">
+                                                For Cryptocurrencies
+                                            </span>
+                                        </h2>
+                                        <p class="bg-light text-dark p-3 p-sm-5 mb-0 text-left">As we all know, processing
+                                            of
+                                            transactions at financial institutions can take longer than
+                                            expected, especially when it comes to international transactions that can
+                                            take up to
+                                            a
+                                            number of days for the transfer to be completed.
+
+                                            But, once again, cryptocurrencies are changing all that by offering the
+                                            transfer of
+                                            funds in
+                                            as little time as 10 minutes no matter where in the world they are being
+                                            transferred
+                                            to.
+                                        </p>
+                                        <p class="bg-light text-dark px-3 px-sm-5 text-left pb-md-5">
                                             But, once again, cryptocurrencies are changing all that by offering the
                                             transfer of
                                             funds in
@@ -434,12 +449,12 @@
                                 </div>
 
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#featureSlider"
+                            <button class="carousel-control-prev d-none d-sm-flex" type="button" data-bs-target="#featureSlider"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#featureSlider"
+                            <button class="carousel-control-next d-none d-sm-flex" type="button" data-bs-target="#featureSlider"
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
@@ -450,7 +465,7 @@
             </div>
         </div>
 
-        
+
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
