@@ -260,8 +260,8 @@ td {
 
 .bricks-darker {
     background-image: url("/assets/images/bricks\ darker.png");
-    background-position: top;
-    background-size: auto;
+    background-position: center;
+    background-size: cover;
 }
 
 .mt-n1 {
