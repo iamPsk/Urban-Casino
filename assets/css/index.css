@@ -398,6 +398,15 @@ thead>tr {
     background-size: 100% 100%;
 }
 
+
+.accordion-button,
+.accordion-button:focus {
+    /* z-index: 3; */
+    border-color: unset;
+    /* outline: 0; */
+    box-shadow: none !important;
+}
+
 .clip-x {
     overflow-x: clip !important;
 }
