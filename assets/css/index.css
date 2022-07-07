@@ -469,6 +469,7 @@ thead>tr {
     line-height: 26px;
     /* identical to box height */
 
+    z-index: 50 !important;
     text-transform: uppercase;
 
     color: #FFFFFF;
@@ -501,6 +502,14 @@ thead>tr {
     
 } */
 
+
+.games .form-control:focus {
+    /* color: #212529; */
+    /* background-color: #fff; */
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+  }
 @media (max-width: 767.9px) {
 
 
