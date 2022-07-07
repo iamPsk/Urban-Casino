@@ -31,7 +31,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.bg-image{
+.bg-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -162,6 +162,16 @@ p,
     transform: skewX(-30deg);
 }
 
+.skewed {
+    display: inline-block;
+    position: relative;
+    background: #f7f930;
+    width: 19px;
+    height: 10px;
+    vertical-align: super;
+    transform: skewX(-30deg);
+    margin-right: 0.5rem;
+}
 
 .header-sm {
     font-weight: 600;
@@ -465,6 +475,17 @@ thead>tr {
 }
 
 
+.apartments .card-footer.text-center::after {
+    content: '';
+    position: absolute;
+    height: 56px;
+    width: 1px;
+    background: #979797;
+    top: -20px;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
 /* .carousel-indicators.mobile {
     flex-direction: row;
     flex-wrap: wrap;
@@ -479,14 +500,23 @@ thead>tr {
     }
 }
 
+@media (max-width: 991.98px) {
+    .img-fluid-xl {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 
 @media (min-width: 0px) {
 
-    .features .carousel-indicators{
+
+    .features .carousel-indicators {
         top: -100px;
         margin-left: 0;
         margin-right: 0;
     }
+
     .roboto-sm,
     .text-med {
         font-size: 16px;
@@ -537,11 +567,12 @@ thead>tr {
 }
 
 @media (min-width: 425px) {
-    .features .carousel-indicators{
+    .features .carousel-indicators {
         top: -100px;
         margin-left: 10%;
         margin-right: 10%;
     }
+
     .custom-gallery>img {
         max-height: 200px;
     }
@@ -552,12 +583,14 @@ thead>tr {
         font-size: 19px;
         line-height: 0.75rem;
         letter-spacing: 1px;
-      }
-    .features .carousel-indicators{
+    }
+
+    .features .carousel-indicators {
         top: -100px;
         margin-left: 15%;
         margin-right: 15%;
     }
+
     .text-med {
         font-size: 20px;
         line-height: 30px;
@@ -572,11 +605,17 @@ thead>tr {
         width: 80px;
     }
 
-    h2,
-    .band p {
+    h2 {
         font-size: 45px;
         line-height: 55px;
         letter-spacing: 4px;
+    }
+
+
+    .band p {
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 2px;
     }
 
     .header-sm {
@@ -619,7 +658,11 @@ thead>tr {
 
 @media (min-width: 767.98px) {
 
-    .features .carousel-indicators{
+    .mr-vip {
+        top: -40px;
+    }
+
+    .features .carousel-indicators {
         top: -96px;
     }
 
@@ -657,9 +700,14 @@ thead>tr {
 
 @media (min-width: 991.98px) {
 
-    .features .carousel-indicators{
+    .position-xl-absolute {
+        position: absolute !important;
+    }
+
+    .features .carousel-indicators {
         top: -120px;
     }
+
     .mt-xl-n2 {
         margin-top: -1.25rem;
     }
