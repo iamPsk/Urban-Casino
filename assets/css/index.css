@@ -462,8 +462,16 @@ thead>tr {
 }
 
 .btn-filter {
-    bottom: 0;
-    right: -30px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
 
 .border-b {
@@ -494,6 +502,8 @@ thead>tr {
 } */
 
 @media (max-width: 767.9px) {
+
+
     .img-fluid-md {
         max-width: 100%;
         height: auto;
@@ -510,6 +520,12 @@ thead>tr {
 
 @media (min-width: 0px) {
 
+
+    .btn-filter {
+        max-width: unset;
+        right: unset;
+        height: unset;
+    }
 
     .features .carousel-indicators {
         top: -100px;
@@ -567,6 +583,7 @@ thead>tr {
 }
 
 @media (min-width: 425px) {
+
     .features .carousel-indicators {
         top: -100px;
         margin-left: 10%;
@@ -579,6 +596,8 @@ thead>tr {
 }
 
 @media (min-width: 575.98px) {
+
+
     .features .carousel-indicators [data-bs-target] {
         font-size: 19px;
         line-height: 0.75rem;
@@ -658,6 +677,14 @@ thead>tr {
 
 @media (min-width: 767.98px) {
 
+    .btn-filter {
+        max-width: 10.8125rem;
+        /* height: auto; */
+        height: 2.875rem;
+        bottom: -2px;
+        right: -29px;
+    }
+
     .mr-vip {
         top: -40px;
     }
@@ -699,6 +726,21 @@ thead>tr {
 }
 
 @media (min-width: 991.98px) {
+
+
+    .btn-filter {
+        max-width: unset;
+        right: unset;
+        height: unset;
+        /* background-size: auto; */
+        /* margin: 0 auto; */
+        /* text-align: left; */
+        max-width: 12.8125rem;
+        /* height: auto; */
+        height: 2.875rem;
+        right: -30px;
+        bottom: 0;  
+    }
 
     .position-xl-absolute {
         position: absolute !important;
