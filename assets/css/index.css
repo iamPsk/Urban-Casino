@@ -25,10 +25,16 @@ body {
     text-transform: uppercase;
 }
 
-.bg-image-e {
+.bg-cover-e {
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bg-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .intro {
@@ -238,8 +244,8 @@ td {
 } */
 
 
-.bg-image,
-.bg-image-b {
+.bg-cover,
+.bg-cover-b {
     /* position: relative; */
     /* overflow: hidden; */
     background-repeat: no-repeat;
@@ -247,7 +253,7 @@ td {
     background-position: center;
 }
 
-.bg-image-b {
+.bg-cover-b {
     background-position: bottom !important;
     background-size: auto;
 }
@@ -387,7 +393,7 @@ thead>tr {
 
 .accordion-item {
     background: url(/assets/images/blueoverlay.png);
-    background-position: center 0;
+    /* background-position: center 0; */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
