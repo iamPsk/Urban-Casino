@@ -472,6 +472,10 @@ thead>tr {
     border-radius: 4px;
 }
 
+.bonus-terms a.list-group-item.ps-2:hover{
+    cursor: text;
+}
+
 @media (max-width: 767.9px) {
 
 
