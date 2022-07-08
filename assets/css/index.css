@@ -379,7 +379,7 @@ td {
     right: 0;
 }
 
-table.table:not(table.top-winners) {
+table.table.top-currency {
     /* border-collapse: separate; */
     /* border-spacing: 0.75rem; */
     width: 1200px;
