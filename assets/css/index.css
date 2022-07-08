@@ -189,7 +189,7 @@ tr {
     border-color: #6FFFBD;
 }
 
-tr td:nth-child(2) {
+.top-winners tr td:nth-child(2) {
     text-align: right;
 }
 
@@ -343,6 +343,10 @@ td {
 table.table.top-currency {
     width: 1200px;
     margin: auto;
+}
+
+.top-currency th{
+    font-weight: normal;
 }
 
 table.table.my-5.top-winners td,
