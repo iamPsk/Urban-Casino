@@ -18,7 +18,7 @@ body {
 
 
 .sub-intro {
-    background: url("/assets/images/sub\ intro\ bg.png") center right/cover no-repeat;
+    background: url("../images/sub\ intro\ bg.png") center right/cover no-repeat;
     width: fit-content;
     font-style: normal;
     font-weight: 700;
@@ -111,7 +111,7 @@ p,
 }
 
 .purple-overlay {
-    background-image: url('/assets/images/Group\ 1.png');
+    background-image: url('../images/Group\ 1.png');
 }
 
 .featured-links .card:before {
@@ -213,7 +213,7 @@ td {
 }
 
 .btn-bg {
-    background-image: url(/assets/images/btn\ bg.png);
+    background-image: url('../images/btn\ bg.png');
     background-repeat: no-repeat;
     border-radius: 0;
     background-position: center right;
@@ -239,7 +239,7 @@ td {
 }
 
 .bricks-darker {
-    background-image: url("/assets/images/bricks\ darker.png");
+    background-image: url("../images/bricks\ darker.png");
     background-position: center;
     background-size: cover;
 }
@@ -293,11 +293,11 @@ td {
 
 
 #featureSlider .carousel-control-next-icon {
-    background-image: url(/assets/images/next\ arrow\ icon.svg);
+    background-image: url('../images/next\ arrow\ icon.svg');
 }
 
 #featureSlider .carousel-control-prev-icon {
-    background-image: url(/assets/images/before\ arrow\ icon.svg);
+    background-image: url('../images/before\ arrow\ icon.svg');
 }
 
 .carousel-control-next,
@@ -307,7 +307,7 @@ td {
 
 
 .light-overlay {
-    background-image: url('/assets/images/light\ gold\ overlay.png');
+    background-image: url('../images/light\ gold\ overlay.png');
 
 }
 
@@ -361,11 +361,11 @@ thead>tr {
 }
 
 .accordion-button::after {
-    background-image: url(/assets/images/accordion\ btn\ icon.svg) !important;
+    background-image: url('../images/accordion\ btn\ icon.svg') !important;
 }
 
 .accordion-item {
-    background: url(/assets/images/blueoverlay.png);
+    background: url('../images/blueoverlay.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
