@@ -360,6 +360,11 @@ thead>tr {
     border: unset !important;
 }
 
+
+#casino .accordion-button::after {
+    background-image: url('../images/chevron\ blue.svg') !important;
+}
+
 .accordion-button::after {
     background-image: url('../images/accordion\ btn\ icon.svg') !important;
 }
@@ -369,6 +374,7 @@ thead>tr {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
 
 
 .accordion-button,
