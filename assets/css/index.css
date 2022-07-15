@@ -486,6 +486,25 @@ thead>tr {
     cursor: text;
 }
 
+.block-step2 {
+    background-image: url('../images/brown-bg.png');
+}
+
+.block-step3 {
+    background-image: url('../images/brown\ bg.png');
+    margin: -1px 0 0 5px;
+}
+
+.block-step4 {
+    background-image: url('../images/brown\ bg.png');
+    margin: -9px -11px 0 -11px;
+}
+
+.block-step5 {
+    background-image: url('../images/brown-bg.png'); 
+    margin: 0 10px 0 16px;
+}
+
 @media (max-width: 767.9px) {
 
 
@@ -502,6 +521,19 @@ thead>tr {
     }
 }
 
+@media (max-width: 1024px) { 
+    .block-step3 {
+        margin: 0;
+    }
+    
+    .block-step4 {
+        margin: 0;
+    }
+    
+    .block-step5 {
+        margin: 0;
+    }
+}   
 
 @media (min-width: 0px) {
 
