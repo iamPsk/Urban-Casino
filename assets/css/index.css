@@ -72,8 +72,8 @@ p,
     color: #00ffff !important;
 }
 
-.border-blue{
-    border-color:#00ffff !important;
+.border-blue {
+    border-color: #00ffff !important;
 }
 
 .text-yellow {
@@ -126,7 +126,8 @@ p,
     top: -20px;
 }
 
-.featured-links .card::after {
+.featured-links .card::after,
+.popover-body::after {
     content: "";
     position: absolute;
     width: 40px;
@@ -136,6 +137,10 @@ p,
     left: -20px;
     transform: rotate(45deg);
     border-top: 1px solid #f7f930;
+}
+
+.popover-body::after {
+    border-top-color: #00ffff;
 }
 
 .skewed-square::before {
@@ -345,7 +350,7 @@ table.table.top-currency {
     margin: auto;
 }
 
-.top-currency th{
+.top-currency th {
     font-weight: normal;
 }
 
@@ -482,7 +487,7 @@ thead>tr {
     border-radius: 4px;
 }
 
-.bonus-terms a.list-group-item.ps-2:hover{
+.bonus-terms a.list-group-item.ps-2:hover {
     cursor: text;
 }
 
@@ -501,13 +506,57 @@ thead>tr {
 }
 
 .block-step5 {
-    background-image: url('../images/brown-bg.png'); 
+    background-image: url('../images/brown-bg.png');
     margin: 0 10px 0 16px;
 }
 
 
-.table-fixed{
+.table-fixed {
     table-layout: fixed;
+}
+
+
+.custom-popover {
+    background: #000;
+    width: 100%;
+    max-width: 570px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.popover-body {
+    position: relative;
+    border: thin solid #00ffff;
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.custom-popover.show {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 767.9px) {
@@ -526,19 +575,19 @@ thead>tr {
     }
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
     .block-step3 {
         margin: 0;
     }
-    
+
     .block-step4 {
         margin: 0;
     }
-    
+
     .block-step5 {
         margin: 0;
     }
-}   
+}
 
 @media (min-width: 0px) {
 
